@@ -1,5 +1,5 @@
 ---
 -hosts: all
  tasks:
-  name: ip ping
-  ping: 
+  -name: ip ping
+   ping: 
