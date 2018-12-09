@@ -5,8 +5,8 @@ StudentsDetails:
     addrs:
     - drno: 123
     - city: hyderabad
-  - name: Deepu
-    phno: 9875461234
+  - name: Deep2
+    phno: 9875462334
     addrs:
-    - drno: 123
-    - city: hyderabad
+    - drno: 123213
+    - city: banglore
