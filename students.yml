@@ -1,12 +1,12 @@
 ---
 StudentDetails:
- - name: Deepu
-   phno: 9875461234
-   addrs:
-   - drno: 123
-   - city: hyderabad
- - name: Deepu
-   phno: 9875461234
-   addrs:
-   - drno: 123
-   - city: hyderabad
+  - name: Deepu
+    phno: 9875461234
+    addrs:
+    - drno: 123
+    - city: hyderabad
+  - name: Deepu
+    phno: 9875461234
+    addrs:
+    - drno: 123
+    - city: hyderabad
