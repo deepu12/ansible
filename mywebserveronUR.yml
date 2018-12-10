@@ -1,0 +1,12 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: installing webserver on ubuntu
+    apt:
+     name: apache2
+     state: present
+  - name: installing webserver on redhat
+    yum:
+     name: httpd
+     state: present
