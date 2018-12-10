@@ -1,0 +1,12 @@
+---
+- hosts: redhatos
+  become: yes
+  tasks: 
+  - name: executing linuc command
+    command: hostname -f
+    register: myregister
+  - name: display result stored in myregister
+    debug:
+     msg: "{{myregister}}"
+     
+    
