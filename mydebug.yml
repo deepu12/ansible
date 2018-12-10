@@ -8,5 +8,11 @@
   - name: display result stored in myregister
     debug:
      msg: "{{myregister}}"
-     
+
+  - name: installing git based on command result
+    yum:
+      name: "{{mygit}}"
+      state: present
+    when: myregister.stderr ==""
+
     
