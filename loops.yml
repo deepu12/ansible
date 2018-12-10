@@ -4,7 +4,7 @@
   tasks:
   - name: installing git, tree and wget on ubuntu
     apt:
-     name: "{{ items }}"
+     name: "{{ item }}"
      state: present
     with_items:
       - git
@@ -13,7 +13,7 @@
     when: ansible_os_family =="Debian"
   - name: installing git, tree and wget on redhat
     yum:
-     name: "{{ items }}"
+     name: "{{ item }}"
      state: present
     with_items: 
       - git
