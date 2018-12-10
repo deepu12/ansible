@@ -13,3 +13,9 @@
      name: "{{webserveronredhat}}"
      state: present
     when: ansible_os_family =="RedHat"
+
+  - name: removing git on redhat
+    yum:
+      name: "{{mygit}}"
+      state: absent
+    when: ansible_os_family =="RedHat"
