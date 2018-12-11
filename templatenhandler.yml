@@ -9,4 +9,13 @@
   - name: starting webservers
     service:
      name: httpd
-     state: restarted
+     state: restarted 
+  - name: copy index file into all nodes
+    template:
+      src: myindex.j2
+      dest: /var/www/html/index.html
+  
+  - name: starting webservers
+    service:
+      name: httpd
+      state: restarted
