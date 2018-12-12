@@ -12,6 +12,7 @@
     yum: 
      namee: tree
      state: present
+    ignore_error: yes
   
   - name: installing wget
     yum:
