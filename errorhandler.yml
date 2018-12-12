@@ -1,0 +1,20 @@
+---
+#we are working with error handlers
+- hosts: redhatos
+  become: yes
+  tasks: 
+  - name: installing git 1
+    yum:
+     name: git
+     state: present
+  
+  - name: installing tree
+    yum: 
+     namee: tree
+     state: present
+  
+  - name: installing wget
+    yum:
+     name: wget
+     state: present
+     
