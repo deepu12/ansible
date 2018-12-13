@@ -1,2 +1,6 @@
 ---
 # handlers file for mytomdeploy
+- name: restartTomcat
+  service:
+    name: tomcat
+    state: restarted
